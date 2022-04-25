@@ -2,11 +2,15 @@
 import { Route,Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from "./components/Navbar"
-import Logout from './components/pages/Logout';
-import Home from './components/pages/Home';
-import Login from './components/pages/Login';
-import Books from './components/pages/Books';
-import About from './components/pages/About';
+import { FooterContainer } from './containers/footer'
+
+
+import Start from './components/pages/Start';
+import Sell from './components/pages/Sell';
+import Market from './components/pages/Market';
+import Manage from './components/pages/Manage';
+import Card from './components/pages/Card';
+import Button from './components/pages/Button';
 
 
 
@@ -17,13 +21,16 @@ function App() {
     <div className="App">
       <Navbar/>
       <Routes>
-        <Route path="home" element={<Home/>}/>
-        <Route path="logout" element={<Logout/>}/>
-        <Route path="login/*" element={<Login/>}/>
-        <Route path="books" element={<Books/>}/>
-        <Route path="about" element={<About/>}/>
+        <Route path="start" element={<Start/>}/>
+        <Route path="sell" element={<Sell/>}/>
+        <Route path="market/*" element={<Market/>}/>
+       
+        <Route path="manage" element={<Manage/>}/>
  
       </Routes>
+      <Card/>
+      <Button/>
+      <FooterContainer/>
       
     </div>
   );

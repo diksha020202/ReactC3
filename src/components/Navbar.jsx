@@ -12,24 +12,22 @@ const Navbar = () => {
      fontWeight:"600",
      display:"flex",
      gap: "20px",
-    }}  >
+     justifyContent:"center",
+    }}  > DikshaSharma
         <div>
          
-           <Link to="/home">Home</Link>
+           <Link to="/start">Start</Link>
         
         </div>
         <div>
-        <Link to="/about">About</Link>
+        <Link to="/sell">Sell</Link>
         </div>
         <div>
-        <button onClick={()=> navigate("/login")} >Login</button>
+        <button onClick={()=> navigate("/market")} >Market</button>
         </div>
         
         <div>
-        <Link to="/books">Books</Link>
-        </div>
-        <div>
-        <Link to="/logout">Logout</Link>
+        <Link to="/manage">Manage</Link>
         </div>
         
     </div>

@@ -1,12 +1,12 @@
 import React from 'react'
 
-const About = () => {
+const Manage = () => {
   return (
     <>
-    <h1>About</h1>
+    <h1>Manage</h1>
     <p>hi there, my name is diksha </p>
     </>
   )
 }
 
-export default About
+export default Manage

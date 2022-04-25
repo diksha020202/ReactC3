@@ -5,7 +5,7 @@ import SignUp from '../SignUp'
 import Google from '../Google'
 
 
-const Login = () => {
+const Market = () => {
    
     
   const navigate = useNavigate();
@@ -14,9 +14,9 @@ const Login = () => {
   return (
     <h1>
         
-        <button onClick={()=> navigate("/login/sign-in")}>Sign In</button>
-        <button onClick={()=> navigate("/login/sign-up")}>Sign Up</button>
-        <button onClick={()=> navigate("/login/sign-in-google")}>login with Google</button>
+        <button onClick={()=> navigate("/Market/sign-in")}>Sign In</button>
+        <button onClick={()=> navigate("/Market/sign-up")}>Sign Up</button>
+        <button onClick={()=> navigate("/Market/sign-in-google")}>Market with Google</button>
         <input type="text" placeholder='Enter Email' />
         <input type="password" placeholder='Enter password' />
 
@@ -36,4 +36,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default Market;
